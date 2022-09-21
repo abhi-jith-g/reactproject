@@ -77,7 +77,11 @@
     gap: 15px;
 }
 .cancle{
-    color: rgb(255, 4, 0);
+    position:absolute;top: 22px;
+    left:74%;
+}.svg{
+    width:16px;
+    size:a3;
 }
 .btnaddnew{
     background-color: aliceblue;
@@ -86,7 +90,13 @@
 .amenity{
     display: grid;
     gap:20px;
+    width: 40%;
     font-size: small;
+   
+}
+.roundlabel{
+    display: flex;
+    justify-content: space-between;
 }
 .detailsamty{
     display: grid;
