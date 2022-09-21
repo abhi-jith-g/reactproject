@@ -1,0 +1,117 @@
+.booktitle{
+  display: grid;
+  grid-template-columns: repeat(6,2fr);
+  justify-items: center;
+  padding:15px;
+  font-weight: 600;
+  background-color: rgb(121, 234, 244);
+  border-bottom: 2px solid rgb(0, 224, 254);
+ 
+}
+/* .bookingdata{
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+  
+} */
+.bookdetails{
+    display: grid;
+    grid-template-columns: repeat(6,2fr);
+    justify-items: center;
+  
+  padding:15px;
+  border: 0.5px solid ;
+}
+.bookingtable{
+  background-color: aliceblue;
+  border:2px solid rgb(0, 224, 254);
+  border-radius: 5px;
+ 
+  margin: 10px;
+}
+.h1{
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  font-weight: 200;
+}
+.form{
+  background-color: rgb(136, 253, 253);
+}
+.inputbox{
+  display: flex;
+  gap:20px;
+  align-content: center;
+  margin-left: 10px;
+}
+.input{
+  border: 1px solid;
+  box-shadow: none;
+  height:5px;
+  border-radius: 3px;
+  width: 40%;
+}
+.newroom{
+  background-color:lightgray ;
+  margin-right:5px;
+  color:red;
+  font-size: 20px;
+ 
+}
+/* .bookingdata{
+  height:200px;
+  overflow-y: scroll;
+} */
+.main{
+  padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(253, 253, 253);
+    width: 100%;
+
+}
+.link{
+  margin-right: 30px;
+ font-size: 15px;
+}
+
+
+
+@media only screen and (max-width: 680px) {
+  
+  .booktitle{
+    
+    padding:5px;
+   font-size: 7px;
+   gap:5px
+
+}
+.link{
+  margin-right: 30px;
+ font-size: 10px;
+ display: block;
+}
+.inputbox{
+  font-size: 2px;
+}
+.bookingtable{padding:5px;
+  font-size: 7px;
+    gap:5px}
+
+.h1{
+  font-size: 7px;
+}
+.input{
+  font-size: 10px;
+    height: 2px;
+    width: 63px;
+    border: 1px solid;
+}
+.newroom{
+  font-size: 10px;
+}
+.search{
+  height:15px;
+  font-size:8px;
+}
+}
