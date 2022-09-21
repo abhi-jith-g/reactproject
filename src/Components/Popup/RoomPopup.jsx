@@ -21,7 +21,7 @@ const RoomPopup = ({setAddroom})=> {
     <div className='popup-box'>
     <div className='popup'>
       <div className='popup-title'>
-      <div className='h1pop'><h1>Rooms</h1></div>
+      <div className='h1pop'><h1>Rooms</h1><label className='cancle' onClick={()=>{setAddroom(false)}}>cancel</label></div>
       </div>
       <div className='formpopup'>
       <form  action="" onSubmit={SendData}method='POST'> 
@@ -33,7 +33,7 @@ const RoomPopup = ({setAddroom})=> {
       <div className='form-bottom'>
       <Button text='Save' btnclr='#0da2ff' color='white'/>
       <div> Or </div>
-      <label className='cancle' onClick={()=>{setAddroom(false)}}>Cancel</label>
+      
       </div>
       <div className='amenitypop'>
         

@@ -27,8 +27,10 @@
     
 } */
 .price{
-    
+    display:flex;
+    gap:20px;
     color: red;
+    padding-left: 40px ;
 }
 .rmtitle{
     /* padding: 0px 10px 0px 10px; */

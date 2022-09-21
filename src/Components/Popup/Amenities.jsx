@@ -1,41 +1,38 @@
 import React from 'react'
 import Button from '../Button/Button'
+import { useState } from 'react'
 
 
 
-const Amenities= ({check,data,title,text,bgclr,color}) => {
+const Amenities= ({check,data,title,text,index,bgclr,color}) => {
+  
+  const [select,setSelect]=useState([]) 
+
   return (
     <div>
         <h2>Amenities</h2>
         
         <div className='amenity'>
-        {/* <select>
-          <option></option>
-          <option></option>
-          <option></option>
-          <option></option>
-          <option></option>
-        </select> */}
-        <Button className='btnaddnew' text='Add New'/>
-
-        <div className='detailsamty'>
-        <div className='amty'>
-            <label>Internet Access</label>
-            <Button className='btnaddnew' text='Delete'/>
-        </div>
-        <div className='amty'>
-        <label>Television</label>
-        <Button className='btnaddnew' text='Delete' />
-        </div>
-        <div className='amty'>
-        <label>Air conditioner</label>
-        <Button className='btnaddnew' text='Delete'/>
-        </div>
-        <div className='amty'>
-        <label>Water heater</label>
-        <Button className='btnaddnew' text='Delete'/>
-        </div>
-        </div>
+        <select onChange={(e)=>{
+          setSelect([...select,e.target.value])}}>
+          <option disabled value='select'>Select</option>
+          <option value='Tv'>Television</option>
+          <option value='Bed'>Bed</option>
+          <option value='Wifi'>WiFi</option>
+          
+        </select>
+        <div className='selectdata'>
+          {select.map((data,index)=>{
+            return(
+              <Button className='btnaddnew' text={data} Functionality={()=>{
+                setSelect(select.filter((item,itemindex)=>{
+                  return itemindex !==index;
+                }))
+              }}/>
+            )
+          })}
+      
+</div>
         
        </div>
     </div>

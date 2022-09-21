@@ -17,10 +17,10 @@ const Roomdetails = ({data}) => {
         <div className='rno'>{data.rno}</div>
         <div>{data.ac}</div>
         <div>{data.cc}</div>
-
-        <div className='price'>{data.price} </div>
+        <div className='price'>
+        <div >{data.price} </div>
         <Button className='edit' text='EDIT' Functionality={popuproom}/>
-
+      </div>
         <div className={addroom ? "popupwindow" : ""}>
       
       {addroom && <RoomPopup setAddroom={setAddroom}/>}
